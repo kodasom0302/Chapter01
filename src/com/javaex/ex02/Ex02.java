@@ -24,34 +24,6 @@ public class Ex02 {
 		
 		sc.close();
 		
-		System.out.println("-------------------------------");
-		
-		Scanner sa=new Scanner(System.in);
-		
-		//안내 - 이름을 입력해 주세요
-		System.out.println("이름을 입력해 주세요");
-		
-		//이름 - 이름:
-		System.out.print("이름: ");
-		
-		//이름 입력
-		String name=sa.nextLine(); //=================왜 오류...?? name 똑같아서 그런 건지
-		
-		//안내 - 나이를 입력해 주세요
-		System.out.println("나이를 입력해 주세요");
-		
-		//나이 - 나이:
-		System.out.println("나이: ");
-		
-		//나이 입력
-		int age=sa.nextLine();
-		
-		//결과 - 당신의 이름은 () 나이는 () 입니다.
-		System.out.println("당신의 이름은 "+name+" 나이는 "+age+" 입니다.");
-		
-		sc.close();
-		
-
 	}
 
 }
