@@ -14,7 +14,7 @@ public class Ex04 {
 		if (time<=8) {
 			System.out.println("임금은 "+time*10000+"원 입니다.");
 		} else {
-			System.out.println("임금은 "+time*12000+"원 입니다.");
+			System.out.println("임금은 "+(8*10000+(time-8)*12000)+"원 입니다.");
 		}
 		
 		sc.close();
@@ -22,3 +22,16 @@ public class Ex04 {
 	}
 
 }
+
+/* 더 간편한 방법
+int worktime=sc.nextInt();
+int salary;
+
+if (worktime<9) {
+	salary=worktime*10000;
+} else {
+	salary=8*10000+(worktime-8)*12000;
+}
+
+System.out.println("임금은 "+salary+"원 입니다.");
+*/

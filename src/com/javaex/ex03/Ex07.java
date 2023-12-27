@@ -10,15 +10,17 @@ public class Ex07 {
 		
 		System.out.print("점수를 입력하세요: ");
 		int p=sc.nextInt();
-		//&& || 연산자
-		if (p<60) {
-			System.out.println("F등급");
-		} else if (p>=90) {
+		
+		if (p>=90) {
 			System.out.println("A등급");
-		} else if (90>p>69) {
+		} else if (79<p&&p<90) {		//><만 사용할 수 없으니 논리 연산자 이용
+			System.out.println("B등급");
+		} else if (69<p&&p<80) {
 			System.out.println("C등급");
-		} else {
+		} else if (59<p&&p<70) {
 			System.out.println("D등급");
+		} else {
+			System.out.println("F등급");
 		}
 		
 		sc.close();
